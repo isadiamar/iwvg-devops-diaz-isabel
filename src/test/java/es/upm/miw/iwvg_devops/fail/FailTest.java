@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FailTest {
     @Test
+    @Disabled
     public void failTest(){
         assertEquals(1,3);
     }
