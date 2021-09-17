@@ -3,7 +3,7 @@
 > Este proyecto es una Plantilla de apoyo docente de la asignatura.
 
 
-![example workflow](https://github.com/isadiamar/iwvg-devops-diaz-isabel/actions/workflows/test-sonar.yml/badge.svg)
+[![example workflow](https://github.com/isadiamar/iwvg-devops-diaz-isabel/actions/workflows/test-sonar.yml/badge.svg)](https://github.com/isadiamar/iwvg-devops-diaz-isabel/actions/workflows/test-sonar.yml)
 [![BCH compliance](https://bettercodehub.com/edge/badge/isadiamar/iwvg-devops-diaz-isabel?branch=master)](https://bettercodehub.com/)
 
 ### :gear: Instalación del proyecto
