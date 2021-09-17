@@ -8,6 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FailTest {
     @Test
     public void failTest(){
-        assertEquals(3,3);
+        assertEquals(1,3);
     }
 }
