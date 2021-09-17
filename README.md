@@ -4,6 +4,7 @@
 
 
 ![example workflow](https://github.com/isadiamar/iwvg-devops-diaz-isabel/actions/workflows/test-sonar.yml/badge.svg)
+[![BCH compliance](https://bettercodehub.com/edge/badge/isadiamar/iwvg-devops-diaz-isabel?branch=master)](https://bettercodehub.com/)
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
