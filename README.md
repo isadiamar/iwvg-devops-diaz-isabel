@@ -2,6 +2,9 @@
 ## Ingeniería Web: Visión General (IWVG) DevOps
 > Este proyecto es una Plantilla de apoyo docente de la asignatura.
 
+
+![example workflow](https://github.com/isadiamar/iwvg-devops-diaz-isabel/actions/workflows/test-sonar.yml/badge.svg)
+
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
 ```sh
