@@ -61,7 +61,7 @@ public class Fraction {
 
     public boolean isEquivalent(Fraction fraction) {
         Fraction aux = divide(fraction);
-        return aux.getDenominator()==aux.getDenominator();
+        return aux.getNumerator()==aux.getDenominator();
     }
 
     public Fraction add(Fraction fraction){
