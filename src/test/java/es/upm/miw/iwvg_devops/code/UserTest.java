@@ -41,9 +41,9 @@ public class UserTest {
         Fraction newFraction = new Fraction(1, 3);
         user.addFraction(newFraction);
         assertEquals(List.of(
-                new Fraction(1, 5),
-                new Fraction(0, 4),
-                newFraction),
+                        new Fraction(1, 5),
+                        new Fraction(0, 4),
+                        newFraction),
                 user.getFractions());
     }
 

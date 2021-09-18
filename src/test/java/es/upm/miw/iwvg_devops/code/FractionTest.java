@@ -50,11 +50,12 @@ public class FractionTest {
     }
 
     @Test
-    void testFractionIsProper(){
+    void testFractionIsProper() {
         assertTrue(fractions.get(0).isProper());
     }
+
     @Test
-    void testFractionIsImproper(){
+    void testFractionIsImproper() {
         assertTrue(fractions.get(1).isImproper());
     }
 
