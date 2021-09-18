@@ -37,6 +37,42 @@ public class Fraction {
         return (double) numerator / denominator;
     }
 
+    public  boolean isProper() {
+        return this.getNumerator() < this.getDenominator();
+    }
+
+    public  boolean isImproper() {
+        return !isProper();
+    }
+
+    public Fraction multiply(Fraction fraction) {
+        int num = this.numerator * fraction.getNumerator();
+        int den=this.denominator * fraction.getDenominator();
+
+        return new Fraction(num,den);
+    }
+
+    public Fraction divide(Fraction fraction) {
+        int num = this.numerator * fraction.getDenominator();
+        int den=this.denominator * fraction.getNumerator();
+
+        return new Fraction(num,den);
+    }
+
+    public boolean isEquivalent(Fraction fraction) {
+        Fraction aux = divide(fraction);
+        return aux.getDenominator()==aux.getDenominator();
+    }
+
+    public Fraction add(Fraction fraction){
+        Fraction aux = divide(fraction);
+
+        int num = aux.getNumerator() + aux.getDenominator();
+        int den = this.denominator * fraction.getDenominator();
+
+        return new Fraction(num,den);
+    }
+
     @Override
     public String toString() {
         return "Fraction{" +
