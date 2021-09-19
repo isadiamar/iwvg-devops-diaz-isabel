@@ -35,6 +35,7 @@ public class Searches {
                 .filter(fraction -> !Double.isInfinite(fraction.decimal()) && !Double.isNaN(fraction.decimal()))
                 .max(Comparator.comparing(Fraction::decimal))
                 .orElse(new Fraction(0, 0));
-
     }
+
+    // 7 - Bug: Do a change
 }
