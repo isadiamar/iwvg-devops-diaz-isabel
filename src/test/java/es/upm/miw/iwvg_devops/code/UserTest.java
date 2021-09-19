@@ -27,34 +27,34 @@ class UserTest {
     }
 
     @Test
-    void testUserGetId(){
-       assertEquals("1", user.getId());
+    void testUserGetId() {
+        assertEquals("1", user.getId());
     }
 
     @Test
-    void testUserGetUserName(){
+    void testUserGetUserName() {
         assertEquals("Sara", user.getName());
     }
 
     @Test
-    void testSetUserName(){
+    void testSetUserName() {
         user.setName("Paula");
-        assertEquals("Paula" , user.getName() );
+        assertEquals("Paula", user.getName());
     }
 
     @Test
-    void testGetUserFamilyName(){
+    void testGetUserFamilyName() {
         assertEquals("Mendez", user.getFamilyName());
     }
 
     @Test
-    void testSetUserFamilyName(){
+    void testSetUserFamilyName() {
         user.setFamilyName("Winx");
         assertEquals("Winx", user.getFamilyName());
     }
 
     @Test
-    void testSetUserFractions(){
+    void testSetUserFractions() {
         List<Fraction> list = List.of(
                 new Fraction(2, 5)
         );
@@ -67,6 +67,7 @@ class UserTest {
 
 
     }
+
     @Test
     void testGetUserFullName() {
         assertEquals("Sara Mendez", user.fullName());
@@ -89,7 +90,7 @@ class UserTest {
     }
 
     @Test
-    void testUserToString(){
+    void testUserToString() {
         String expected = "User{" +
                 "id='" + user.getId() + '\'' +
                 ", name='" + user.getName() + '\'' +
@@ -97,7 +98,7 @@ class UserTest {
                 ", fractions=" + user.getFractions() +
                 '}';
         String actual = user.toString();
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
 }
