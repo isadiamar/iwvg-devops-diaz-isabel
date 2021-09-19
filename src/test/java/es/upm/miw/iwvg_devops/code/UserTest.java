@@ -27,6 +27,47 @@ class UserTest {
     }
 
     @Test
+    void testUserGetId(){
+       assertEquals("1", user.getId());
+    }
+
+    @Test
+    void testUserGetUserName(){
+        assertEquals("Sara", user.getName());
+    }
+
+    @Test
+    void testSetUserName(){
+        user.setName("Paula");
+        assertEquals("Paula" , user.getName() );
+    }
+
+    @Test
+    void testGetUserFamilyName(){
+        assertEquals("Mendez", user.getFamilyName());
+    }
+
+    @Test
+    void testSetUserFamilyName(){
+        user.setFamilyName("Winx");
+        assertEquals("Winx", user.getFamilyName());
+    }
+
+    @Test
+    void testSetUserFractions(){
+        List<Fraction> list = List.of(
+                new Fraction(2, 5)
+        );
+
+        List<Fraction> fractions = new ArrayList<>(list);
+
+        user.setFractions(fractions);
+
+        assertEquals(fractions, user.getFractions());
+
+
+    }
+    @Test
     void testGetUserFullName() {
         assertEquals("Sara Mendez", user.fullName());
     }
@@ -45,6 +86,18 @@ class UserTest {
                         new Fraction(0, 4),
                         newFraction),
                 user.getFractions());
+    }
+
+    @Test
+    void testUserToString(){
+        String expected = "User{" +
+                "id='" + user.getId() + '\'' +
+                ", name='" + user.getName() + '\'' +
+                ", familyName='" + user.getFamilyName() + '\'' +
+                ", fractions=" + user.getFractions() +
+                '}';
+        String actual = user.toString();
+        assertEquals(expected,actual);
     }
 
 }
