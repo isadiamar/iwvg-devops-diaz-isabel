@@ -32,12 +32,10 @@ public class Searches {
     public Fraction findHighestFraction() {
         return new UserDatabase().findAll()
                 .flatMap(user -> user.getFractions().stream())
-                // .map(Fraction::decimal)
-                //.filter(fraction -> !fraction.isInfinite() && !fraction.isNaN())
-                // .max(Comparator.comparingDouble(Double::valueOf))
                 .filter(fraction -> !Double.isInfinite(fraction.decimal()) && !Double.isNaN(fraction.decimal()))
                 .max(Comparator.comparing(Fraction::decimal))
                 .orElse(new Fraction(0, 0));
-
     }
+
+    // 7 - Bug: Do a change
 }
