@@ -17,7 +17,14 @@ public class Searches {
                 .flatMap(user -> user.getFractions().stream()
                         .filter(Fraction::isProper))
                 .findFirst()
-                .orElse(new Fraction(0,0));
+                .orElse(new Fraction(0, 0));
     }
 
+    public Fraction findFractionAdditionByUserId(String id) {
+        return new UserDatabase().findAll()
+                .filter(user -> id.equals(user.getId()))
+                .flatMap(user -> user.getFractions().stream())
+                .reduce(Fraction::add)
+                .orElse(new Fraction(0, 0));
+    }
 }

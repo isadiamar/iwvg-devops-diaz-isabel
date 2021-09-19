@@ -22,13 +22,13 @@ class FractionTest {
     }
 
     @Test
-    void testFractionByDefault(){
-        assertEquals(new Fraction(1,1), new Fraction());
+    void testFractionByDefault() {
+        assertEquals(new Fraction(1, 1), new Fraction());
     }
 
     @Test
-    void testSettersOfFraction(){
-        Fraction expected = new Fraction(1,2);
+    void testSettersOfFraction() {
+        Fraction expected = new Fraction(1, 2);
 
         Fraction actual = fractions.get(0);
         actual.setNumerator(1);
@@ -76,7 +76,7 @@ class FractionTest {
     }
 
     @Test
-    void testFractionToString(){
+    void testFractionToString() {
         String expected = "Fraction{" +
                 "numerator=" + 4 +
                 ", denominator=" + 10 +
