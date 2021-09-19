@@ -22,6 +22,22 @@ class FractionTest {
     }
 
     @Test
+    void testFractionByDefault(){
+        assertEquals(new Fraction(1,1), new Fraction());
+    }
+
+    @Test
+    void testSettersOfFraction(){
+        Fraction expected = new Fraction(1,2);
+
+        Fraction actual = fractions.get(0);
+        actual.setNumerator(1);
+        actual.setDenominator(2);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testFractionGetDecimal() {
         assertEquals(0.4, fractions.get(0).decimal());
     }
@@ -59,4 +75,15 @@ class FractionTest {
         assertTrue(fractions.get(1).isImproper());
     }
 
+    @Test
+    void testFractionToString(){
+        String expected = "Fraction{" +
+                "numerator=" + 4 +
+                ", denominator=" + 10 +
+                '}';
+
+        String actual = fractions.get(2).toString();
+
+        assertEquals(expected, actual);
+    }
 }
