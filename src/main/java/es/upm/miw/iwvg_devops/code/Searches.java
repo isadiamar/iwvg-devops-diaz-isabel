@@ -11,4 +11,13 @@ public class Searches {
                 .map(Fraction::decimal);
     }
 
+    public Fraction findFirstProperFractionByUserId(String id) {
+        return new UserDatabase().findAll()
+                .filter(user -> id.equals(user.getId()))
+                .flatMap(user -> user.getFractions().stream()
+                        .filter(Fraction::isProper))
+                .findFirst()
+                .orElse(new Fraction(0,0));
+    }
+
 }

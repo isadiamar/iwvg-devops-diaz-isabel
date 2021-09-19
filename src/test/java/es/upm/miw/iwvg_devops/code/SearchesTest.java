@@ -17,4 +17,9 @@ public class SearchesTest {
                         .collect(Collectors.toList()));
     }
 
+    @Test
+    void testFindFirstProperFractionByUserId() {
+        assertEquals(new Fraction(-1,5),
+                searches.findFirstProperFractionByUserId("2"));
+    }
 }
