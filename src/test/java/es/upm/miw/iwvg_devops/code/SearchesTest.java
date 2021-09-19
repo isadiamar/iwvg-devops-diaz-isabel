@@ -25,6 +25,14 @@ public class SearchesTest {
 
     @Test
     void testFindFractionAdditionByUserId() {
-        assertEquals(new Fraction(16, 8), searches.findFractionAdditionByUserId("4"));
+        assertEquals(new Fraction(16, 8),
+                searches.findFractionAdditionByUserId("4"));
     }
+
+    @Test
+    void testFindHighestFraction() {
+        assertEquals(new Fraction(2, 1),
+                searches.findHighestFraction());
+    }
+
 }
